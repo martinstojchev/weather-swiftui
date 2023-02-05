@@ -13,6 +13,7 @@
 		3361E435298FE50F00D17BCD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3361E434298FE50F00D17BCD /* Preview Assets.xcassets */; };
 		3361E43C298FE5D500D17BCD /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3361E43B298FE5D500D17BCD /* Model.swift */; };
 		3361E43E298FE5F200D17BCD /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3361E43D298FE5F100D17BCD /* ViewModel.swift */; };
+		3361E44329902BD700D17BCD /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3361E44229902BD700D17BCD /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3361E43B298FE5D500D17BCD /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		3361E43D298FE5F100D17BCD /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		3361E441298FF44F00D17BCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3361E44229902BD700D17BCD /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				3361E431298FE50F00D17BCD /* Assets.xcassets */,
 				3361E43B298FE5D500D17BCD /* Model.swift */,
 				3361E43D298FE5F100D17BCD /* ViewModel.swift */,
+				3361E44229902BD700D17BCD /* LocationManager.swift */,
 				3361E433298FE50F00D17BCD /* Preview Content */,
 			);
 			path = "weather-swiftui";
@@ -147,6 +150,7 @@
 			files = (
 				3361E43C298FE5D500D17BCD /* Model.swift in Sources */,
 				3361E430298FE50E00D17BCD /* ContentView.swift in Sources */,
+				3361E44329902BD700D17BCD /* LocationManager.swift in Sources */,
 				3361E43E298FE5F200D17BCD /* ViewModel.swift in Sources */,
 				3361E42E298FE50E00D17BCD /* weather_swiftuiApp.swift in Sources */,
 			);
@@ -280,6 +284,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "weather-swiftui/Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -309,6 +314,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "weather-swiftui/Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -17,6 +17,7 @@ struct ContentView: View {
                 .border(Color.gray)
                 .onSubmit {
                     print("searchedCity: \(searchedCity)")
+                    viewModel.weatherMode = .city
                     viewModel.fetchWeather(cityName: searchedCity)
                 }
             Spacer()
@@ -32,6 +33,10 @@ struct ContentView: View {
                 .font(.system(size: 24))
             Spacer()
         }
+        .onAppear(perform: {
+            viewModel.weatherMode = .location
+            viewModel.fetchWeather(cityName: "Veles")
+        })
     }
 }
 
