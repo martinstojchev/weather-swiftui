@@ -11,6 +11,8 @@
 		3361E430298FE50E00D17BCD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3361E42F298FE50E00D17BCD /* ContentView.swift */; };
 		3361E432298FE50F00D17BCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3361E431298FE50F00D17BCD /* Assets.xcassets */; };
 		3361E435298FE50F00D17BCD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3361E434298FE50F00D17BCD /* Preview Assets.xcassets */; };
+		3361E43C298FE5D500D17BCD /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3361E43B298FE5D500D17BCD /* Model.swift */; };
+		3361E43E298FE5F200D17BCD /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3361E43D298FE5F100D17BCD /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		3361E42F298FE50E00D17BCD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3361E431298FE50F00D17BCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3361E434298FE50F00D17BCD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3361E43B298FE5D500D17BCD /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		3361E43D298FE5F100D17BCD /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 				3361E42D298FE50E00D17BCD /* weather_swiftuiApp.swift */,
 				3361E42F298FE50E00D17BCD /* ContentView.swift */,
 				3361E431298FE50F00D17BCD /* Assets.xcassets */,
+				3361E43B298FE5D500D17BCD /* Model.swift */,
+				3361E43D298FE5F100D17BCD /* ViewModel.swift */,
 				3361E433298FE50F00D17BCD /* Preview Content */,
 			);
 			path = "weather-swiftui";
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3361E43C298FE5D500D17BCD /* Model.swift in Sources */,
 				3361E430298FE50E00D17BCD /* ContentView.swift in Sources */,
+				3361E43E298FE5F200D17BCD /* ViewModel.swift in Sources */,
 				3361E42E298FE50E00D17BCD /* weather_swiftuiApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
