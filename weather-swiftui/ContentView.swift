@@ -9,9 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var viewModel = WeatherViewModel()
+    @State var searchedCity: String = ""
     
     var body: some View {
         VStack {
+            TextField("Enter a city", text: $searchedCity)
+                .border(Color.gray)
+                .onSubmit {
+                    print("searchedCity: \(searchedCity)")
+                    viewModel.fetchWeather(cityName: searchedCity)
+                }
+            Spacer()
             Text(viewModel.cityName)
                 .font(.system(size: 50))
             Text(viewModel.timezone)
@@ -22,12 +30,13 @@ struct ContentView: View {
                 .font(.system(size: 24))
             Text(viewModel.descriptionText)
                 .font(.system(size: 24))
+            Spacer()
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(searchedCity: "Veles")
     }
 }
