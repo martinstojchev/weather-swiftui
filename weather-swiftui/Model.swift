@@ -22,3 +22,12 @@ struct WeatherInfo: Codable {
     let main: String
     let description: String 
 }
+
+struct CityName: Codable {
+    let cityObject: CityNameObject
+}
+
+struct CityNameObject: Codable {
+    let lat: Double
+    let lon: Double
+}
